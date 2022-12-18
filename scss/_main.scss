@@ -588,6 +588,7 @@ input:checked + .slider:before {
   grid-gap: 40px;
   margin-top: auto;
   margin-left: 70px;
+  margin-bottom: 60px;
 }
 
 .mobile-menu__foot-link {
@@ -814,12 +815,17 @@ input:checked + .slider:before {
   color: var(--color-blue);
   height: 32px;
   border: none;
-  width: 13px;
+  width: 32px;
   border-left: 1px solid rgba(0, 0, 0, 0.329);
+  margin-left: auto;
+  left: 14px;
+  position: relative;
 }
 
 .btn-cc {
   color: var(--color-dark-blue);
+  width: 45px !important;
+  display: inline-block;
 }
 
 @media (max-width: 1280px) {
