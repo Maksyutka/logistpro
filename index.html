@@ -4,23 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/intlInputPhone.min.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Logist Pro</title>
   </head>
   <body>
+    <div class="mobile-menu">
+      <div class="mobile-menu__content">
+        <div class="mobile-menu__logo">
+          <img src="./images/content/mobile-logo.svg" alt="logo" />
+        </div>
+        <div class="mobile-menu__main">
+          <button class="mobile-menu__main-services">Сервіси</button>
+          <nav class="mobile-menu__main-dropdown">
+            <ul class="mobile-menu__main-list">
+              <li class="mobile-menu__main-item">
+                <a class="mobile-menu__nav-link" href="#">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#car"></use>
+                  </svg>
+                  <p>Каталог перевізників</p>
+                </a>
+              </li>
+              <li class="mobile-menu__main-item">
+                <a class="mobile-menu__nav-link" href="#">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service2"></use>
+                  </svg>
+                  <p>Каталог відправників</p>
+                </a>
+              </li>
+              <li class="mobile-menu__main-item">
+                <a class="mobile-menu__nav-link" href="#">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service3"></use>
+                  </svg>
+                  <p>Вільні грузи</p>
+                </a>
+              </li>
+              <li class="mobile-menu__main-item">
+                <a class="mobile-menu__nav-link" href="#">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service4"></use>
+                  </svg>
+                  <p>Вільні автомобілі</p>
+                </a>
+              </li>
+              <li class="mobile-menu__main-item">
+                <a class="mobile-menu__nav-link" href="#">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service5"></use>
+                  </svg>
+                  <p>Рейси партнерів</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="mobile-menu__main-link" href="#">Хто ми є</a>
+        </div>
+        <div class="mobile-menu__foot">
+          <a class="mobile-menu__foot-link" href="#">Реєстрація</a>
+          <a class="mobile-menu__foot-link" href="#">Вхід</a>
+        </div>
+      </div>
+      <div class="mobile-menu__side">
+        <span class="mobile-menu__square mobile-menu__square_top"></span>
+        <span class="mobile-menu__square mobile-menu__square_bottom"></span>
+      </div>
+    </div>
     <header class="header">
       <div class="container container_header">
         <div class="header__btns header__btns_left">
           <button class="header__dropdown">
             <p>Сервіси</p>
             <span class="arrow">
-              <svg class="id">
+              <svg>
                 <use xlink:href="./images/icons/icons.svg#arrow"></use>
               </svg>
             </span>
           </button>
+          <div class="header__popup">
+            <div class="header__popup-grid">
+              <a class="header__service" href="#">
+                <span class="header__service-icon">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#car"></use>
+                  </svg>
+                </span>
+                <p class="header__service-text">Каталог перевізників</p>
+              </a>
+              <a class="header__service" href="#">
+                <span class="header__service-icon">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service2"></use>
+                  </svg>
+                </span>
+                <p class="header__service-text">Каталог відправників</p>
+              </a>
+              <a class="header__service" href="#">
+                <span class="header__service-icon">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service3"></use>
+                  </svg>
+                </span>
+                <p class="header__service-text">Рейси партнерів</p>
+              </a>
+              <a class="header__service" href="#">
+                <span class="header__service-icon">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service4"></use>
+                  </svg>
+                </span>
+                <p class="header__service-text">Вільні грузи</p>
+              </a>
+              <a class="header__service" href="#">
+                <span class="header__service-icon">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service5"></use>
+                  </svg>
+                </span>
+                <p class="header__service-text">Вільні автомобілі</p>
+              </a>
+            </div>
+          </div>
           <a class="header__link" href="#">Хто ми є</a>
         </div>
         <a class="header__logo" href="#">
@@ -30,7 +138,11 @@
           <a class="header__link" href="#">Вхід</a>
           <a class="header__link" href="#">Реєстрація</a>
         </div>
-        <button class="burger">B</button>
+        <button class="burger">
+          <svg>
+            <use xlink:href="./images/icons/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <section class="head">
@@ -151,39 +263,103 @@
       </div>
     </section>
     <section class="partners">
-      <div class="container">
+      <div class="container container_partners">
         <h2 class="partners__title">З нами працюють</h2>
-        <div class="partners__grid">
-          <img src="./images/content/partner1.png" alt="partner-preview" />
-          <img src="./images/content/partner2.png" alt="partner-preview" />
-          <img src="./images/content/partner3.png" alt="partner-preview" />
-          <img src="./images/content/partner4.png" alt="partner-preview" />
-          <img src="./images/content/partner5.png" alt="partner-preview" />
-          <img src="./images/content/partner6.png" alt="partner-preview" />
-          <img src="./images/content/partner7.png" alt="partner-preview" />
-          <img src="./images/content/partner8.png" alt="partner-preview" />
-          <img src="./images/content/partner9.png" alt="partner-preview" />
-          <img src="./images/content/partner10.png" alt="partner-preview" />
-          <img src="./images/content/partner11.png" alt="partner-preview" />
-          <img src="./images/content/partner12.png" alt="partner-preview" />
-          <img src="./images/content/partner13.png" alt="partner-preview" />
-          <img src="./images/content/partner14.png" alt="partner-preview" />
-          <img src="./images/content/partner15.png" alt="partner-preview" />
-          <img src="./images/content/partner16.png" alt="partner-preview" />
-          <img src="./images/content/partner17.png" alt="partner-preview" />
-          <img src="./images/content/partner18.png" alt="partner-preview" />
-          <img src="./images/content/partner19.png" alt="partner-preview" />
-          <img src="./images/content/partner20.png" alt="partner-preview" />
-          <img src="./images/content/partner21.png" alt="partner-preview" />
-          <img src="./images/content/partner22.png" alt="partner-preview" />
-          <img src="./images/content/partner23.png" alt="partner-preview" />
-          <img src="./images/content/partner24.png" alt="partner-preview" />
-          <img src="./images/content/partner25.png" alt="partner-preview" />
-          <img src="./images/content/partner26.png" alt="partner-preview" />
-          <img src="./images/content/partner27.png" alt="partner-preview" />
-          <img src="./images/content/partner28.png" alt="partner-preview" />
-          <img src="./images/content/partner29.png" alt="partner-preview" />
-          <img src="./images/content/partner30.png" alt="partner-preview" />
+        <div class="partners__slider">
+          <div class="partners__grid">
+            <div class="partners__logo">
+              <img src="./images/content/partner1.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner2.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner3.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner4.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner5.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner6.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner7.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner8.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner9.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner10.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner11.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner12.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner13.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner14.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner15.png" alt="parter-logo" />
+            </div>
+          </div>
+          <div class="partners__grid">
+            <div class="partners__logo">
+              <img src="./images/content/partner16.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner17.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner18.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner19.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner20.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner21.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner22.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner23.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner24.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner25.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner26.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner27.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner28.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner29.png" alt="parter-logo" />
+            </div>
+            <div class="partners__logo">
+              <img src="./images/content/partner30.png" alt="parter-logo" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -216,6 +392,10 @@
                 <p class="form-block__subtitle">Email</p>
                 <input type="email" placeholder="Введіть вашу електронну пошту" id="email" name="email" />
               </div>
+              <div class="form-block__input-wrapper">
+                <p class="form-block__subtitle">Телефон</p>
+                <div class="input-phone"></div>
+              </div>
             </div>
             <div class="form-block__column">
               <div class="form-block__input-wrapper">
@@ -243,7 +423,8 @@
       </div>
     </footer>
   </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/intlInputPhone.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
 </html>

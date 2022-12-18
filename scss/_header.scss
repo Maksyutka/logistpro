@@ -24,6 +24,12 @@
   align-items: center;
   grid-gap: 10px;
 
+  &.active {
+    .arrow {
+      transform: rotate(180deg);
+    }
+  }
+
   .arrow {
     display: inline-block;
     transition: 0.3s;
@@ -45,6 +51,8 @@
 
   &_left {
     grid-gap: 40px;
+
+    position: relative;
   }
 
   &_right {
@@ -60,6 +68,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
+  display: flex;
+  align-items: center;
   transform: translate(-50%, -50%);
   width: 113px;
   transition: 0.3s;
@@ -75,9 +85,25 @@
 }
 
 .burger {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   display: none;
+  color: var(--color-blue);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: #33446b;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 1px;
+  }
 }
 
 @media (max-width: 600px) {
