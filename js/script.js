@@ -15,11 +15,16 @@ function mobileMenuInit() {
   $(".burger").click(() => {
     $(".mobile-menu").addClass("opened");
     $("html").addClass("overflowed");
+
+    setTimeout(function () {
+      $(".block").addClass("block_opened");
+    }, 100);
   });
 
   $(".mobile-menu__side").click(() => {
     $(".mobile-menu").removeClass("opened");
     $("html").removeClass("overflowed");
+    $(".block").removeClass("block_opened");
   });
 }
 
