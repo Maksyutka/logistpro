@@ -17,7 +17,12 @@
           <img src="./images/content/mobile-logo.svg" alt="logo" />
         </div>
         <div class="mobile-menu__main">
-          <button class="mobile-menu__main-services">Сервіси</button>
+          <button class="mobile-menu__main-services">
+            <svg>
+              <use xlink:href="./images/icons/icons.svg#services"></use>
+            </svg>
+            <p>Сервіси</p>
+          </button>
           <nav class="mobile-menu__main-dropdown">
             <ul class="mobile-menu__main-list">
               <li class="mobile-menu__main-item">
@@ -62,11 +67,24 @@
               </li>
             </ul>
           </nav>
-          <a class="mobile-menu__main-link" href="#">Хто ми є</a>
+          <a class="mobile-menu__main-link" href="#">
+            <img src="./images/content/minilogo.svg" alt="" />
+            <p>Хто ми є</p>
+          </a>
         </div>
         <div class="mobile-menu__foot">
-          <a class="mobile-menu__foot-link" href="#">Реєстрація</a>
-          <a class="mobile-menu__foot-link" href="#">Вхід</a>
+          <a class="mobile-menu__foot-link" href="#">
+            <svg>
+              <use xlink:href="./images/icons/icons.svg#reg"></use>
+            </svg>
+            <p>Реєстрація</p>
+          </a>
+          <a class="mobile-menu__foot-link" href="#">
+            <svg>
+              <use xlink:href="./images/icons/icons.svg#logout"></use>
+            </svg>
+            <p>Вхід</p>
+          </a>
         </div>
       </div>
       <div class="mobile-menu__side">
@@ -74,7 +92,7 @@
         <span class="mobile-menu__square mobile-menu__square_bottom"></span>
       </div>
     </div>
-    <header class="header block">
+    <header class="header block" id="header">
       <div class="container container_header">
         <div class="header__btns header__btns_left">
           <button class="header__dropdown">

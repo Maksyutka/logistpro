@@ -1,6 +1,24 @@
 .header {
   padding: 25px 0;
+  background-color: #f6f6fa;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
 }
+
+// body {
+//   &.scrolled {
+//     padding-top: 71px;
+//   }
+// }
+
+// .sticky {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 5;
+// }
 
 .header__link {
   color: var(--color-blue);
@@ -119,5 +137,15 @@
     position: relative;
     left: 0;
     transform: unset;
+  }
+
+  .header {
+    padding: 15px 0;
+  }
+
+  body {
+    &.scrolled {
+      padding-top: 65px;
+    }
   }
 }

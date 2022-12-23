@@ -15,6 +15,7 @@ function mobileMenuInit() {
   $(".burger").click(() => {
     $(".mobile-menu").addClass("opened");
     $("html").addClass("overflowed");
+    $("body").removeClass("scrolled");
 
     setTimeout(function () {
       $(".block").addClass("block_opened");
