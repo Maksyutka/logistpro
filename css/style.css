@@ -434,6 +434,7 @@ input:checked + .slider:before {
 .header__popup {
   position: absolute;
   top: 42px;
+  z-index: 5;
   left: 0;
   padding: 0 20px;
   background-color: #e6e6f0;
