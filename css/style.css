@@ -706,7 +706,7 @@ input:checked + .slider:before {
   flex-direction: column;
   margin-top: 100px;
   z-index: 5;
-  margin-bottom: 224px;
+  margin-bottom: 24px;
 }
 
 .mobile-menu__main-link {
