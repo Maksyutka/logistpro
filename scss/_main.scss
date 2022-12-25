@@ -521,12 +521,21 @@ input:checked + .slider:before {
   width: 100vw;
   z-index: 10;
   display: flex;
-  height: 100vh;
-  left: -120%;
+  left: calc(-100vw - 81px);
   transition: 0.5s;
+  height: 100%;
+  overflow-y: auto;
+  min-height: 100vh;
+  opacity: 1;
 
   &.opened {
-    left: 0%;
+    left: 0vw;
+    opacity: 1;
+
+    .mobile-menu__side {
+      left: calc(100vw - 81px);
+      opacity: 1;
+    }
   }
 }
 
@@ -545,6 +554,12 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  position: fixed;
+  height: 100%;
+  left: -100vw;
+  width: 81px;
+  transition: 0.5s;
+  opacity: 0.5;
 }
 
 .mobile-menu__main-link {
@@ -597,15 +612,17 @@ input:checked + .slider:before {
   padding: 40px 0px;
   display: flex;
   flex-direction: column;
+  z-index: 10;
 }
 
 .mobile-menu__foot {
   display: flex;
   flex-direction: column;
   grid-gap: 40px;
-  margin-top: auto;
-  margin-left: 20px;
-  margin-bottom: 60px;
+  padding-top: 200px;
+  background-color: #5476c9;
+  padding-left: 20px;
+  padding-bottom: 60px;
 }
 
 .mobile-menu__foot-link {
@@ -1043,12 +1060,12 @@ input:checked + .slider:before {
     display: none;
   }
 
-  .banner_about {
-    background-image: url(../images/backgrounds/bannermobile.jpg);
-  }
-
   .banner_business {
     background-image: url(../images/backgrounds/banner2mobile.jpg);
+  }
+
+  .banner_about {
+    background-image: url(../images/backgrounds/bannermobile.jpg);
   }
 
   .form-block {
@@ -1141,6 +1158,10 @@ input:checked + .slider:before {
     }
   }
 
+  .banner {
+    padding: 45px 0;
+  }
+
   .mobile-menu {
     display: flex;
   }
@@ -1217,7 +1238,7 @@ input:checked + .slider:before {
   }
 
   .container_banner {
-    grid-gap: 25px;
+    grid-gap: 20px;
   }
 
   .banner__title {
@@ -1271,6 +1292,12 @@ input:checked + .slider:before {
     button {
       background-color: var(--color-blue);
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .banner__title {
+    font-size: 20px;
   }
 }
 
