@@ -492,7 +492,7 @@ input:checked + .slider:before {
   left: -120%;
   transition: 0.5s;
   height: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   min-height: var(--doc-height);
 }
 .mobile-menu.opened {
@@ -519,7 +519,7 @@ input:checked + .slider:before {
   flex-direction: column;
   position: fixed;
   width: 80px;
-  height: 100vh;
+  min-height: var(--doc-height);
   right: 100%;
 }
 
@@ -570,6 +570,9 @@ input:checked + .slider:before {
   padding: 40px 0px 0px 0px;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  min-height: var(--doc-height);
 }
 
 .mobile-menu__foot {
@@ -702,7 +705,7 @@ input:checked + .slider:before {
   flex-direction: column;
   margin-top: 100px;
   z-index: 5;
-  margin-bottom: 24px;
+  margin-bottom: 124px;
 }
 
 .mobile-menu__main-link {
