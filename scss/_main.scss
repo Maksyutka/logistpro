@@ -521,17 +521,17 @@ input:checked + .slider:before {
   width: 100vw;
   z-index: 10;
   display: flex;
-  left: -120%;
+  left: calc(-100vw - 81px);
   transition: 0.5s;
   height: 100%;
   overflow-y: hidden;
   min-height: var(--doc-height);
 
   &.opened {
-    left: 0%;
+    left: 0;
 
     .mobile-menu__side {
-      right: 0;
+      left: calc(100vw - 80px);
     }
   }
 }
@@ -554,7 +554,8 @@ input:checked + .slider:before {
   position: fixed;
   width: 80px;
   min-height: var(--doc-height);
-  right: 100%;
+  left: -100vw;
+  transition: 0.5s;
 }
 
 .mobile-menu__main-link {
@@ -755,7 +756,7 @@ input:checked + .slider:before {
   flex-direction: column;
   margin-top: 100px;
   z-index: 5;
-  margin-bottom: 124px;
+  margin-bottom: 224px;
 }
 
 .mobile-menu__main-link {
