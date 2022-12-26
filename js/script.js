@@ -12,6 +12,9 @@ function headerPopupInit() {
 //mobile menu
 
 function mobileMenuInit() {
+  $(".mobile-menu").hide();
+  $(".mobile-menu").removeClass("transparent");
+
   $(".burger").click(() => {
     $(".mobile-menu").fadeIn();
     $("html").addClass("overflowed");
