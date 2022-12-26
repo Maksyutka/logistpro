@@ -13,9 +13,13 @@ function headerPopupInit() {
 
 function mobileMenuInit() {
   $(".burger").click(() => {
-    $(".mobile-menu").addClass("opened");
+    $(".mobile-menu").fadeIn();
     $("html").addClass("overflowed");
     $("body").removeClass("scrolled");
+
+    if ($(document).scrollTop() >= 65) {
+      $(".header").fadeOut();
+    }
 
     setTimeout(function () {
       $(".block").addClass("block_opened");
@@ -23,9 +27,13 @@ function mobileMenuInit() {
   });
 
   $(".mobile-menu__side").click(() => {
-    $(".mobile-menu").removeClass("opened");
+    $(".mobile-menu").fadeOut();
     $("html").removeClass("overflowed");
     $(".block").removeClass("block_opened");
+
+    setTimeout(function () {
+      $(".header").fadeIn();
+    }, 300);
   });
 }
 
