@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/intlInputPhone.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Logist Pro</title>
+  </head>
+  <body>
+    <div class="mobile-menu transparent">
+      <div class="mobile-menu__content">
+        <div class="mobile-menu__logo">
+          <img src="./images/content/mobile-logo.svg" alt="logo" />
+        </div>
+        <div class="mobile-menu__main">
+          <button class="mobile-menu__main-services">
+            <svg>
+              <use xlink:href="./images/icons/icons.svg#services"></use>
+            </svg>
+            <p>Сервіси</p>
+          </button>
+          <nav class="mobile-menu__main-dropdown">
+            <ul class="mobile-menu__main-list">
+              <li class="mobile-menu__main-item">
+                <a class="mobile-menu__nav-link" href="#">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#car"></use>
+                  </svg>
+                  <p>Каталог перевізників</p>
+                </a>
+              </li>
+              <li class="mobile-menu__main-item">
+                <a class="mobile-menu__nav-link" href="#">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service2"></use>
+                  </svg>
+                  <p>Каталог відправників</p>
+                </a>
+              </li>
+              <li class="mobile-menu__main-item">
+                <a class="mobile-menu__nav-link" href="#">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service3"></use>
+                  </svg>
+                  <p>Вільні вантажі</p>
+                </a>
+              </li>
+              <li class="mobile-menu__main-item">
+                <a class="mobile-menu__nav-link" href="#">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service4"></use>
+                  </svg>
+                  <p>Вільні автомобілі</p>
+                </a>
+              </li>
+              <li class="mobile-menu__main-item">
+                <a class="mobile-menu__nav-link" href="#">
+                  <svg>
+                    <use xlink:href="./images/icons/icons.svg#service5"></use>
+                  </svg>
+                  <p>Рейси партнерів</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="mobile-menu__main-link" href="#">
+            <img src="./images/content/minilogo.svg" alt="" />
+            <p>Хто ми є</p>
+          </a>
+        </div>
+        <div class="mobile-menu__foot">
+          <a class="mobile-menu__foot-link" href="#">
+            <svg>
+              <use xlink:href="./images/icons/icons.svg#reg"></use>
+            </svg>
+            <p>Реєстрація</p>
+          </a>
+          <a class="mobile-menu__foot-link" href="#">
+            <svg>
+              <use xlink:href="./images/icons/icons.svg#logout"></use>
+            </svg>
+            <p>Вхід</p>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-menu__side">
+        <span class="mobile-menu__square mobile-menu__square_top"></span>
+        <span class="mobile-menu__square mobile-menu__square_bottom"></span>
+      </div>
+    </div>
+    <div class="block block_partners">
+      <button id="toTop"></button>
+      <header class="header" id="header">
+        <div class="container container_header">
+          <div class="header__btns header__btns_left">
+            <button class="header__dropdown">
+              <p>Сервіси</p>
+              <span class="arrow">
+                <svg>
+                  <use xlink:href="./images/icons/icons.svg#arrow"></use>
+                </svg>
+              </span>
+            </button>
+            <div class="header__popup">
+              <div class="header__popup-grid">
+                <a class="header__service" href="#">
+                  <span class="header__service-icon">
+                    <svg>
+                      <use xlink:href="./images/icons/icons.svg#car"></use>
+                    </svg>
+                  </span>
+                  <p class="header__service-text">Каталог перевізників</p>
+                </a>
+                <a class="header__service" href="#">
+                  <span class="header__service-icon">
+                    <svg>
+                      <use xlink:href="./images/icons/icons.svg#service2"></use>
+                    </svg>
+                  </span>
+                  <p class="header__service-text">Каталог відправників</p>
+                </a>
+                <a class="header__service" href="#">
+                  <span class="header__service-icon">
+                    <svg>
+                      <use xlink:href="./images/icons/icons.svg#service3"></use>
+                    </svg>
+                  </span>
+                  <p class="header__service-text">Рейси партнерів</p>
+                </a>
+                <a class="header__service" href="#">
+                  <span class="header__service-icon">
+                    <svg>
+                      <use xlink:href="./images/icons/icons.svg#service4"></use>
+                    </svg>
+                  </span>
+                  <p class="header__service-text">Вільні вантажі</p>
+                </a>
+                <a class="header__service" href="#">
+                  <span class="header__service-icon">
+                    <svg>
+                      <use xlink:href="./images/icons/icons.svg#service5"></use>
+                    </svg>
+                  </span>
+                  <p class="header__service-text">Вільні автомобілі</p>
+                </a>
+              </div>
+            </div>
+            <a class="header__link" href="#">Хто ми є</a>
+          </div>
+          <a class="header__logo" href="#">
+            <img src="./images/content/logo.svg" alt="logo" />
+          </a>
+          <div class="header__btns header__btns_right">
+            <a class="header__link" href="#">Вхід</a>
+            <a class="header__link" href="#">Реєстрація</a>
+          </div>
+          <button class="burger">
+            <svg>
+              <use xlink:href="./images/icons/icons.svg#burger"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <section class="partners-head">
+        <div class="container container_partners-page">
+          <div class="partners-head__logo-wrapper">
+            <img src="./images/content/partners-logo.svg" alt="partners-logo" />
+          </div>
+          <div class="partners-head__logo">
+            <svg>
+              <use xlink:href="./images/icons/icons.svg#partners"></use>
+            </svg>
+          </div>
+          <h1 class="partners-head__title">Рейси партнерів</h1>
+          <p class="partners-head__subtitle">Система автоматизації транспортної логістики</p>
+          <p class="partners-head__text">Скоротіть витрати на вантажоперевезення до 30%, підвищуйте їхню безпеку та ефективність</p>
+          <button class="btn btn_blue">Спробувати зараз</button>
+        </div>
+      </section>
+      <section class="pros">
+        <div class="container">
+          <div class="pros__cards-wrapper">
+            <div class="pros__card pros__card_blue">
+              <div class="pros__head-icon">
+                <svg>
+                  <use xlink:href="./images/icons/icons.svg#pros1"></use>
+                </svg>
+              </div>
+              <h3 class="pros-card__title">Хмарна система</h3>
+              <p class="pros-card__text">Робота в хмарній системі можлива з будь-яких пристроїв</p>
+            </div>
+            <div class="pros__card pros__card_green">
+              <div class="pros__head-icon">
+                <svg>
+                  <use xlink:href="./images/icons/icons.svg#pros2"></use>
+                </svg>
+              </div>
+              <h3 class="pros-card__title">Прозорість</h3>
+              <p class="pros-card__text">Прозорість співпраці з партнерами</p>
+            </div>
+            <div class="pros__card pros__card_yellow">
+              <div class="pros__head-icon">
+                <svg>
+                  <use xlink:href="./images/icons/icons.svg#pros3"></use>
+                </svg>
+              </div>
+              <h3 class="pros-card__title">Автоматизація</h3>
+              <p class="pros-card__text">Автоматизація операційних процесів</p>
+            </div>
+            <div class="pros__card pros__card_red">
+              <div class="pros__head-icon">
+                <svg>
+                  <use xlink:href="./images/icons/icons.svg#pros4"></use>
+                </svg>
+              </div>
+              <h3 class="pros-card__title">Інтеграція</h3>
+              <p class="pros-card__text">Інтеграція з усіма ERP-системами</p>
+            </div>
+          </div>
+          <div class="pros__text-wrapper">
+            <p class="pros__text">Це <span class="orange">TMS система</span> по управлінню та контролю <span class="orange">транспортної логістики</span> компанії <span class="orange">вантажовідправника</span>.</p>
+            <p class="pros__text">Вона <span class="orange">автоматизує операційну діяльність</span> та співпрацю з партнерами. <span class="orange">Обʼєднує</span> в себе всі <span class="orange">необхідні інструменти</span> для контролю транспортної логістики.</p>
+            <p class="pros__text"><span class="orange">Дозволяє</span> побудувати прозору систему ціноутворення та <span class="orange">зменшити транспортні бюджети</span>.</p>
+            <p class="pros__text">Гнучкий інструмент для налаштування процесів співпраці з транспортними партнерами.</p>
+          </div>
+        </div>
+      </section>
+      <section class="numbers">
+        <div class="container">
+          <h2 class="numbers__title">SCTP у цифрах:</h2>
+          <div class="numbers__wrapper">
+            <div class="numbers__card numbers__card_blue">
+              <h3 class="numbers__card-title">300+ відправників вантажу</h3>
+              <p class="numbers__card-text">Нашими продуктами користується понад 300 відправників вантажу.</p>
+            </div>
+            <div class="numbers__card numbers__card_green">
+              <h3 class="numbers__card-title">3000+ транспортних компаній</h3>
+              <p class="numbers__card-text">На платформі 3000+ транспортних компаній з різною кількістю та типами рухомого складу</p>
+            </div>
+            <div class="numbers__card numbers__card_yellow">
+              <h3 class="numbers__card-title">50 000+ торгів по рейсам</h3>
+              <p class="numbers__card-text">Проводяться торги 50000+ рейсів, довідник перевізників постійно поповнюється</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pros-list">
+        <div class="pros-list__upper-bg"></div>
+        <div class="container container_pros-list">
+          <h2 class="pros-list__title">SCTP - це:</h2>
+          <ul class="pros-list__list">
+            <li class="pros-list__item">Безпечний доступ до рейсів тільки для свого закритого пулу перевізників</li>
+            <li class="pros-list__item">Миттєве повідомлення про початок торгів через Viber або електронною поштою</li>
+            <li class="pros-list__item">Можливість налаштування ціни торгів з ПДВ та без ПДВ</li>
+            <li class="pros-list__item">Гнучкі процедури торгів, що настроюються (торги на підвищення, редукцій, запит цін і ще 10 параметрів)</li>
+            <li class="pros-list__item">Можливість роботи з мобільних пристроїв</li>
+            <li class="pros-list__item">Зручний робочий кабінет для перевізника та відправника вантажу</li>
+            <li class="pros-list__item">Автоматичне формування заявки на транспорт</li>
+            <li class="pros-list__item">Автоматичне формування довіреності за формою М-2</li>
+            <li class="pros-list__item">Можливість завантаження на майданчик будь-яких транспортних документів</li>
+            <li class="pros-list__item">Синхронізація та автоматична передача даних в ERP систему відправника вантажу</li>
+            <li class="pros-list__item">Звіти, що настроюються на роботу в системі (по торгам, рейсам, перевізникам, співробітникам і ще більше 60 варіантів налаштувань)</li>
+            <li class="pros-list__item">Спеціальний модуль для роботи ПЕК</li>
+            <li class="pros-list__item">Інтеграція з сервісами TSM та ROUD</li>
+          </ul>
+        </div>
+        <div class="pros-list__lower-bg"></div>
+      </section>
+      <section class="free">
+        <div class="container container_free">
+          <div class="free__block">
+            <h3 class="free__title">Якщо ти вантажовідправник</h3>
+            <div class="free__text-wrapper">
+              <p class="free__text">Якщо ви вантажовідправник, використання системи для вас БЕЗКОШТОВНЕ!</p>
+              <p class="free__text">Налаштуйте робочі процеси у системі та зменьшіть свої транспортні бюджети.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="steps">
+        <div class="container">
+          <h2 class="steps__title">Як це працює?</h2>
+          <div class="steps__wrapper">
+            <div class="steps__card steps__card_one">
+              <h3 class="steps__card-title">Крок 1</h3>
+              <div class="steps__circle steps__circle_red"></div>
+              <p class="steps__subtitle">створіть</p>
+              <p class="steps__text">пул партнерських транспортних компаній</p>
+            </div>
+            <div class="steps__card steps__card_two">
+              <h3 class="steps__card-title">Крок 2</h3>
+              <div class="steps__circle steps__circle_yellow"></div>
+              <p class="steps__subtitle">Завантажте</p>
+              <p class="steps__text">свої рейси</p>
+            </div>
+            <div class="steps__card steps__card_three">
+              <h3 class="steps__card-title">Крок 3</h3>
+              <div class="steps__circle steps__circle_green"></div>
+              <p class="steps__subtitle">Отримайте</p>
+              <p class="steps__text">від партнерів цінові пропозиції, оберіть найкращі</p>
+            </div>
+            <div class="steps__card steps__card_four">
+              <h3 class="steps__card-title">Крок 4</h3>
+              <div class="steps__circle steps__circle_blue"></div>
+              <p class="steps__subtitle">Автоматизуйте</p>
+              <p class="steps__text">процес формування документації</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner banner_join">
+        <div class="container container_banner">
+          <h2 class="banner__title">Приєднайся до нас зараз</h2>
+          <button class="btn btn_orange">Зареєструватись</button>
+        </div>
+      </section>
+      <section class="start">
+        <div class="container">
+          <h2 class="start__title">Як почати? З чого почати?</h2>
+          <div class="start__wrapper">
+            <div class="start__card start__card_red">
+              <div class="start__card-content">
+                <h3 class="start__card-title">Заявка</h3>
+                <p class="start__card-text">Залишіть заявку на сайті, зателефонуйте +38(097)8781906; або напишіть на пошту <a href="mailto:sales@sctp.com.ua">sales@sctp.com.ua</a></p>
+              </div>
+              <div class="start__card-foot">1</div>
+            </div>
+            <div class="start__card start__card_orange">
+              <div class="start__card-content">
+                <h3 class="start__card-title">Консультація</h3>
+                <p class="start__card-text">З вами зв'яжеться наш менеджер і відповість на всі запитання</p>
+              </div>
+              <div class="start__card-foot">2</div>
+            </div>
+            <div class="start__card start__card_yellow">
+              <div class="start__card-content">
+                <h3 class="start__card-title">Створення кабінету та навчання</h3>
+                <p class="start__card-text">Ми зробимо обліковий запис для вашої компанії, всі необхідні налаштування та проведемо навчання для співробітників</p>
+              </div>
+              <div class="start__card-foot">3</div>
+            </div>
+            <div class="start__card start__card_green">
+              <div class="start__card-content">
+                <h3 class="start__card-title">Інтеграція з ERP</h3>
+                <p class="start__card-text">При необхідності ми синхронізуємо Рейси партнерів із вашою ERP-системою. Строк реалізації до 2 тижнів</p>
+              </div>
+              <div class="start__card-foot">4</div>
+            </div>
+            <div class="start__card start__card_turquoise">
+              <div class="start__card-content">
+                <h3 class="start__card-title">Використання та результат</h3>
+                <p class="start__card-text">Спростіть та автоматизуйте транспортну логістику та заощаджуйте до 30% транспортного бюджету компанії</p>
+              </div>
+              <div class="start__card-foot">5</div>
+            </div>
+            <div class="start__card start__card_blue">
+              <div class="start__card-content">
+                <h3 class="start__card-title">Гнучкі умови співробітництва</h3>
+                <p class="start__card-text">Персональний менеджер допоможе визначитися з оптимальною бізнес-моделлю співробітництва</p>
+              </div>
+              <div class="start__card-foot">6</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="possibilities">
+        <div class="container">
+          <h2 class="possibilities__title">Основні можливості</h2>
+          <div class="possibilities__wrapper">
+            <div class="possibilities__card possibilities__card_params">
+              <h3 class="possibilities__card-title">Параметри розподілу заявок, що настроюються</h3>
+              <div class="possibilities__content">
+                <ul class="possibilities__list">
+                  <li class="possibilities__item">SPOT торги (редукціони, аукціони, збирання пропозицій);</li>
+                  <li class="possibilities__item">Розподіл заявок між перевізниками за фіксованими ставками;</li>
+                  <li class="possibilities__item">Розподіл заявок у ручному режимі;</li>
+                </ul>
+              </div>
+            </div>
+            <div class="possibilities__card possibilities__card_transport">
+              <h3 class="possibilities__card-title">Автоматизація замовлення транспорту</h3>
+              <div class="possibilities__content">
+                <ul class="possibilities__list">
+                  <li class="possibilities__item">Заявки на перевезення вантажів розподіляються автоматично за заданими критеріями;</li>
+                  <li class="possibilities__item">Прозоре та безпечне ціноутворення;</li>
+                  <li class="possibilities__item">Обмін документами та отримання даних в одному вікні;</li>
+                  <li class="possibilities__item">Перевізник сам вносить усі необхідні дані для підтвердження виконання заявки;</li>
+                  <li class="possibilities__item">Системні повідомлення про хід розподілу заявок на Viber або на Email;</li>
+                </ul>
+              </div>
+            </div>
+            <div class="possibilities__card possibilities__card_analitycs">
+              <h3 class="possibilities__card-title">Аналітика та звітність</h3>
+              <div class="possibilities__content">
+                <ul class="possibilities__list">
+                  <li class="possibilities__item">Вивантаження аналітичних даних на будь-якому етапі погодження заявки та транспортування вантажу;</li>
+                  <li class="possibilities__item">Контроль “слабких місць”;</li>
+                  <li class="possibilities__item">Формування звітів у Excel-таблиці або діаграми для візуалізації процесів;</li>
+                  <li class="possibilities__item">Понад 70 параметрів звітності;</li>
+                  <li class="possibilities__item">Понад 70 параметрів звітності;</li>
+                  <li class="possibilities__item">Історія розподілу заявок;</li>
+                </ul>
+              </div>
+            </div>
+            <div class="possibilities__card possibilities__card_docs">
+              <h3 class="possibilities__card-title">Електронний документообіг</h3>
+              <div class="possibilities__content">
+                <ul class="possibilities__list">
+                  <li class="possibilities__item">Формування транспортого замовлення та отримання підтвердженяя від перевізника в одному вікні;</li>
+                  <li class="possibilities__item">Обмін шз перевізником іншою документацією;</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="plan">
+        <div class="container">
+          <h2 class="plan__title">Тарифний план</h2>
+          <div class="plan__wrapper">
+            <p class="plan__text">Звʼяжіться з нами за допомогою форми зворотнього звʼязку та дізнайтесь як ми можемо допомогти вам оптимізувати ваш бізнес</p>
+            <p class="plan__text">Для вантажовідправників використання сервісу може бути абсолютно безкоштовно. Зв*яжіться з нами за допомогою форми зворотнього звʼязку</p>
+          </div>
+        </div>
+      </section>
+      <section class="form-block">
+        <div class="container container_form-block">
+          <h2 class="form-block__title">Залишились питання?</h2>
+          <p class="form-block__subtitle">Зв'яжіться з нами у будь-який час, і ми будемо раді відповісти на ваші запитання. Заповніть форму, щоб надіслати нам email. Ми відповімо найближчим часом.</p>
+          <form class="form-block__form" action="#">
+            <div class="form-block__top">
+              <p class="form-block__text">Я:</p>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              <p class="form-block__text">Вантажовідправник</p>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+              <p class="form-block__text">Перевізник</p>
+              <p class="form-block__note">(можливо вибрати відразу два варіанти)</p>
+            </div>
+            <div class="form-block__main">
+              <div class="form-block__column">
+                <div class="form-block__input-wrapper">
+                  <p class="form-block__subtitle">ПІБ</p>
+                  <input type="text" placeholder="Введіть ваші ПІБ" id="name" name="name" />
+                </div>
+                <div class="form-block__input-wrapper">
+                  <p class="form-block__subtitle">Email</p>
+                  <input type="email" placeholder="Введіть вашу електронну пошту" id="email" name="email" />
+                </div>
+                <div class="form-block__input-wrapper">
+                  <p class="form-block__subtitle">Телефон</p>
+                  <div class="input-phone"></div>
+                </div>
+              </div>
+              <div class="form-block__column">
+                <div class="form-block__input-wrapper">
+                  <p class="form-block__subtitle">Запитання</p>
+                  <textarea name="question" placeholder="Введіть ваше запитання" rows="10"></textarea>
+                </div>
+              </div>
+            </div>
+            <input class="btn btn_blue" type="submit" value="Надіслати нам своє питання" />
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container container_footer">
+          <div class="footer__column">
+            <a class="footer__logo" href="#">
+              <img src="./images/content/logo.svg" alt="logo" />
+            </a>
+            <p class="footer__text">Всі права захищені ®SCTP 2022</p>
+          </div>
+          <div class="footer__column">
+            <a class="footer__link" href="#">Сервіси</a>
+            <a class="footer__link" href="#">Хто ми є</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/intlInputPhone.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</html>

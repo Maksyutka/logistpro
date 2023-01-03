@@ -16,12 +16,13 @@ function mobileMenuInit() {
   $(".mobile-menu").removeClass("transparent");
 
   $(".burger").click(() => {
-    $(".mobile-menu").fadeIn();
+    $(".mobile-menu").fadeIn(700);
     $("html").addClass("overflowed");
     $("body").removeClass("scrolled");
+    $("#toTop").fadeOut(700);
 
     if ($(document).scrollTop() >= 65) {
-      $(".header").fadeOut();
+      $(".header").fadeOut(700);
     }
 
     setTimeout(function () {
@@ -30,13 +31,14 @@ function mobileMenuInit() {
   });
 
   $(".mobile-menu__side").click(() => {
-    $(".mobile-menu").fadeOut();
+    $(".mobile-menu").fadeOut(700);
     $("html").removeClass("overflowed");
     $(".block").removeClass("block_opened");
 
     setTimeout(function () {
       $(".header").fadeIn();
-    }, 300);
+      $("#toTop").fadeIn();
+    }, 700);
   });
 }
 
@@ -99,6 +101,14 @@ function phoneNumSelect() {
   $(".input-phone").intlInputPhone();
 }
 
+//top anchor button
+
+function upBtnInit() {
+  $("#toTop").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 1500);
+  });
+}
+
 // 100vh fix
 
 const documentHeight = () => {
@@ -116,4 +126,5 @@ $(document).ready(function () {
   mobileDropdownInit();
   partnersSliderInit();
   phoneNumSelect();
+  upBtnInit();
 });
