@@ -4,7 +4,7 @@
   text-decoration: none !important;
 }
 
-.block {
+.slideable-page {
   position: relative;
   transition: 0.7s;
   left: 0;
@@ -15,13 +15,20 @@
 
   &_opened {
     transform: scale(96.5%);
-    left: calc(100% - 90px);
+    left: calc(100% - 92px);
   }
 
   &_partners {
-    &.block_opened {
+    &.slideable-page_opened {
       transform: scale(97.6%);
       left: calc(100% - 90px);
+    }
+  }
+
+  &_who-we-are {
+    &.slideable-page_opened {
+      transform: scale(94%);
+      left: calc(100% - 98px);
     }
   }
 }
@@ -69,6 +76,18 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
+
+  @media (max-width: 1280px) {
+    max-width: 1210px;
+  }
+
+  @media (max-width: 1024px) {
+    max-width: 954px;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 590px;
+  }
 
   &_header {
     display: flex;
@@ -139,6 +158,11 @@ body {
     &:hover {
       background-color: rgb(209, 115, 27);
     }
+  }
+
+  &_unactive {
+    background-color: #d0d5df;
+    pointer-events: none;
   }
 
   &_blue {

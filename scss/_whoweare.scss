@@ -1,0 +1,280 @@
+.container {
+  &_who-we-are {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_who-we-info {
+    display: flex;
+    grid-gap: 50px;
+    justify-content: space-between;
+  }
+}
+
+.who-we-are {
+  padding: 140px 0 225px 0;
+  background-image: url(../images/backgrounds/whoweare-bg.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  margin-top: 71px;
+}
+
+.who-we-are__logo {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  max-width: 553px;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.who-we-are__title {
+  color: var(--color-light);
+  text-align: center;
+  font-size: 64px;
+}
+
+.who-we-info {
+  padding: 136px 0;
+  background: url(../images/backgrounds/who-we-info-bg.jpg);
+  background-position: 50%;
+  background-size: cover;
+}
+
+.who-we-info__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.who-we-info__title-line {
+  font-weight: 400;
+  color: var(--color-orange);
+  font-size: 100px;
+  line-height: 1.1;
+
+  &::first-letter {
+    font-weight: 700;
+    color: var(--color-dark-blue);
+  }
+}
+
+.who-we-info__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 757px;
+  justify-content: center;
+  grid-gap: 28px;
+}
+
+.who-we-info__paragraph {
+  font-size: 30px;
+  color: var(--color-dark-blue);
+  line-height: 1.38;
+}
+
+.text-info-block {
+  padding: 110px 0 160px 0;
+  background: url(../images/backgrounds/numbers-bg.jpg), #e6e6f0;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.text-info-block__title {
+  margin-bottom: 85px;
+  text-align: center;
+  color: var(--color-blue);
+  font-size: 48px;
+}
+
+.text-info-block__wrapper {
+  border: 1px solid #777b82;
+  background-color: var(--color-light);
+  padding: 90px 83px;
+  border-radius: 20px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.text-info-block__paragraph {
+  font-size: 30px;
+  color: var(--color-dark-blue);
+  line-height: 1.6;
+}
+
+@media (max-width: 1280px) {
+  .who-we-info__text {
+    max-width: 620px;
+  }
+
+  .who-we-info__paragraph {
+    font-size: 28px;
+  }
+
+  .text-info-block__title {
+    font-size: 38px;
+  }
+
+  .text-info-block__paragraph {
+    font-size: 28px;
+  }
+
+  .text-info-block__wrapper {
+    padding: 90px 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .who-we-are {
+    padding: 120px 0 140px 0;
+  }
+
+  .who-we-are__logo {
+    max-width: 324px;
+  }
+
+  .who-we-info {
+    padding: 114px 0;
+  }
+
+  .who-we-info__title-line {
+    font-size: 80px;
+  }
+
+  .who-we-info__text {
+    max-width: 453px;
+  }
+
+  .who-we-info__paragraph {
+    font-size: 20px;
+  }
+
+  .text-info-block {
+    padding: 90px 0;
+  }
+
+  .text-info-block__title {
+    font-size: 38px;
+    margin-bottom: 60px;
+  }
+
+  .text-info-block__wrapper {
+    padding: 70px 50px;
+  }
+
+  .text-info-block__paragraph {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 800px) {
+  .who-we-info__paragraph {
+    font-size: 17px;
+  }
+
+  .who-we-info__title-line {
+    font-size: 50px;
+  }
+
+  .who-we-info {
+    padding: 50px 0;
+  }
+
+  .text-info-block {
+    padding: 60px 0;
+  }
+
+  .text-info-block__title {
+    font-size: 20px;
+    margin-bottom: 55px;
+  }
+
+  .text-info-block__wrapper {
+    padding: 20px 40px;
+  }
+
+  .text-info-block__paragraph {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .who-we-are {
+    padding: 100px 0;
+    margin-top: 65px;
+    background-image: url(../images/backgrounds/whoweare-bg-mobile.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .who-we-are__logo {
+    max-width: 211px;
+    margin-bottom: 20px;
+  }
+
+  .who-we-are__title {
+    font-size: 39px;
+  }
+
+  .who-we-info__text {
+    grid-gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .who-we-info__paragraph {
+    font-size: 13px;
+  }
+
+  .who-we-info__title {
+    justify-content: flex-start;
+  }
+
+  .who-we-info__title-line {
+    font-size: 25px;
+  }
+
+  .container_who-we-info {
+    grid-gap: 20px;
+  }
+
+  .text-info-block {
+    background: url(../images/backgrounds/numbers-bg-mobile.png), #e6e6f0;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .text-info-block__title {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  .text-info-block__wrapper {
+    padding: 13px 36px;
+  }
+
+  .text-info-block__paragraph {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 400px) {
+  .who-we-are {
+    padding: 73px 0 90px 0;
+  }
+
+  .who-we-are__logo {
+    max-width: 160px;
+    margin-bottom: 35px;
+  }
+
+  .who-we-are__title {
+    font-size: 22px;
+  }
+}

@@ -26,14 +26,14 @@ function mobileMenuInit() {
     }
 
     setTimeout(function () {
-      $(".block").addClass("block_opened");
+      $(".slideable-page").addClass("slideable-page_opened");
     }, 100);
   });
 
   $(".mobile-menu__side").click(() => {
     $(".mobile-menu").fadeOut(700);
     $("html").removeClass("overflowed");
-    $(".block").removeClass("block_opened");
+    $(".slideable-page").removeClass("slideable-page_opened");
 
     setTimeout(function () {
       $(".header").fadeIn();
