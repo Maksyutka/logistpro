@@ -37,7 +37,9 @@ function mobileMenuInit() {
 
     setTimeout(function () {
       $(".header").fadeIn();
-      $("#toTop").fadeIn();
+      if ($(window).scrollTop() > 500) {
+        $("#toTop").fadeIn();
+      }
     }, 700);
   });
 }
@@ -95,6 +97,52 @@ $(window).resize(function () {
   }
 });
 
+//shippers slider init
+
+function shippersSliderInit() {
+  $(".shippers-slider__wrapper").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    infinite: false,
+    autoplay: false,
+    mobileFirst: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: "unslick",
+      },
+    ],
+  });
+}
+
+$(window).resize(function () {
+  if (window.innerWidth > 576) {
+    $(".shippers-slider__wrapper").slick("unslick");
+  } else {
+    $(".shippers-slider__wrapper")
+      .not(".slick-initialized")
+      .slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        arrows: false,
+        autoplay: false,
+        mobileFirst: true,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 576,
+            settings: "unslick",
+          },
+        ],
+      });
+  }
+});
+
 //phone
 
 function phoneNumSelect() {
@@ -106,6 +154,16 @@ function phoneNumSelect() {
 function upBtnInit() {
   $("#toTop").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 1500);
+  });
+
+  $("#toTop").hide();
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+      $("#toTop").fadeIn();
+    } else {
+      $("#toTop").fadeOut();
+    }
   });
 }
 
@@ -127,4 +185,5 @@ $(document).ready(function () {
   partnersSliderInit();
   phoneNumSelect();
   upBtnInit();
+  shippersSliderInit();
 });
