@@ -372,6 +372,13 @@
   line-height: 1.2;
 }
 
+.shippers-head_carriers {
+  background-image: url(../images/backgrounds/carriers-bg.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 1280px) {
   .shippers-head {
     background-image: url(../images/backgrounds/shippers-mobile-bg.jpg);
@@ -459,6 +466,13 @@
     background-image: url(../images/backgrounds/cargo-bg.jpg);
     background-size: cover;
     background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  .shippers-head_carriers {
+    background-image: url(../images/backgrounds/carriers-bg-mobile.jpg);
+    background-position: 50%;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 }
