@@ -636,6 +636,7 @@ input:checked + .slider:before {
   scrollbar-width: thin;
 }
 .mobile-menu__content::-webkit-scrollbar {
+  display: none;
   width: 0px;
 }
 .mobile-menu__content::-webkit-scrollbar-track {
