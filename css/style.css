@@ -34,7 +34,7 @@
   left: calc(100% - 98px);
 }
 .slideable-page_catalog.slideable-page_opened {
-  transform: scale(95%);
+  transform: scale(94.5%);
   left: calc(100% - 95px);
 }
 
@@ -2329,6 +2329,7 @@ body {
   }
   .pros__text {
     font-size: 17px;
+    max-width: unset;
   }
   .possibilities__wrapper {
     grid-template-columns: repeat(2, 1fr);
