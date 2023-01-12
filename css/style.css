@@ -3253,6 +3253,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.shippers-head_freecars {
+  background-image: url(../images/backgrounds/freecars-bg.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 1280px) {
   .shippers-head {
     background-image: url(../images/backgrounds/shippers-mobile-bg.jpg);
@@ -3325,6 +3332,12 @@ body {
   }
   .shippers-head_carriers {
     background-image: url(../images/backgrounds/carriers-bg-mobile.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .shippers-head_freecars {
+    background-image: url(../images/backgrounds/freecars-bg.jpg);
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
