@@ -2870,6 +2870,7 @@ body {
   }
   .text-info-block__paragraph {
     font-size: 15px;
+    max-width: unset;
   }
 }
 @media (max-width: 400px) {
