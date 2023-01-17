@@ -109,6 +109,7 @@ function shippersSliderInit() {
     autoplay: false,
     mobileFirst: true,
     variableWidth: true,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 576,
@@ -133,6 +134,7 @@ $(window).resize(function () {
         autoplay: false,
         mobileFirst: true,
         variableWidth: true,
+        centerMode: true,
         responsive: [
           {
             breakpoint: 576,

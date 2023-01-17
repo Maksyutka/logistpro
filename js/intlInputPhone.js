@@ -10,7 +10,7 @@ if (typeof jQuery === "undefined") {
 (function ($) {
   var IntlInputPhone = function (element, options) {
     this.element = element;
-    this.preferred_country = typeof options != "undefined" ? options.preferred_country : ["ua", "ru"];
+    this.preferred_country = typeof options != "undefined" ? options.preferred_country : ["ua"];
     this.display_error = typeof options != "undefined" ? options.display_error : "on";
     this.error_message = typeof options != "undefined" ? options.error_message : IntlInputPhone.DEFAULTS.error_message;
   };
@@ -272,7 +272,7 @@ if (typeof jQuery === "undefined") {
     intlInputPhone: '<input type="hidden" name="intlInputPhone" class="intlInputPhone" size="2" value=\'@data\' />',
     separator: '<li role="separator" class="divider"></li>',
     template:
-      '<div class="input-group"><div class="input-group-btn"><button type="button" id="btn-country" class="btn btn-default  f16 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag @cca2 btn-flag"></span><span class="btn-cc">&nbsp;&nbsp; +@callingCode &nbsp;&nbsp;</span><span class="caret"></span></button> <ul class="dropdown-menu f16">@country_items</ul></div><input type="text" name="phoneNumber" id="phoneNumber" class="form-control phoneNumber" placeholder="" size="25" /><input type="hidden" name="defaultCountry" id="defaultCountry" size="2" value="@cca2" /><input type="hidden" name="carrierCode" id="carrierCode" size="2" value="@callingCode" /></div>',
+      '<div class="input-group"><div class="input-group-btn"><button type="button" id="btn-country" class="btn btn-default  f16 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag @cca2 btn-flag"></span><span class="btn-cc">&nbsp;&nbsp; +@callingCode &nbsp;&nbsp;</span><span class="caret"></span></button> <ul class="dropdown-menu f16">@country_items</ul></div><input type="number" name="phoneNumber" id="phoneNumber" class="form-control phoneNumber" placeholder="" size="25" /><input type="hidden" name="defaultCountry" id="defaultCountry" size="2" value="@cca2" /><input type="hidden" name="carrierCode" id="carrierCode" size="2" value="@callingCode" /></div>',
   };
 
   IntlInputPhone.prototype.init = function () {

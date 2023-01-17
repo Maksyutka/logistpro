@@ -3614,7 +3614,7 @@ body {
     padding-left: 21px;
   }
   .shippers-slider__wrapper {
-    margin: 0 -15px 0 0px;
+    margin: 0 -15px 0 -15px;
     overflow: visible;
   }
   .shippers-slider__wrapper .slick-dots {
@@ -3633,13 +3633,16 @@ body {
     align-items: stretch;
   }
   .shippers-slider__wrapper .shippers-slider__slide {
-    margin: 0px 10px;
     height: 100%;
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 75vw;
+    width: 82.2vw;
     max-width: unset;
+  }
+  .shippers-slider__wrapper .shippers-slider__slide:nth-child(2) {
+    margin-left: 20px;
+    position: relative;
   }
   .price__info-block {
     flex-direction: column;
@@ -3652,9 +3655,6 @@ body {
   .price__content-title svg {
     width: 50px;
     height: 50px;
-  }
-  p {
-    max-width: 210px;
   }
   .price__name {
     font-size: 17px;
